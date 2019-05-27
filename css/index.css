@@ -1272,7 +1272,7 @@ input[type="search"]::-webkit-search-decoration {
 #main {
 	background: #fff;
 	position: relative;
-	z-index: 2
+
 }
 
 .container {
