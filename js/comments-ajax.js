@@ -1,20 +1,15 @@
-/**
- * WordPress jQuery-Ajax-Comments v1.3 by Willin Kan.
- * URI: http://kan.willin.org/?p=1271
- * for WP3.5+ | modified version URI: http://zww.me/wordpress3-5-willin-ajax-comment.z-turn
- */
 var i = 0, got = -1, len = document.getElementsByTagName('script').length;
 while (i <= len && got == -1) {
     var js_url = document.getElementsByTagName('script')[i].src,
         got = js_url.indexOf('comments-ajax.js');
     i++;
 }
-var edit_mode = '1', // 再編輯模式 ( '1'=開; '0'=不開 )
+var edit_mode = '1', 
         ajax_php_url = js_url.replace('-ajax.js','-ajax.php'),
         wp_url = js_url.substr(0, js_url.indexOf('wp-content')),
-        pic_sb = wp_url + 'wp-admin/images/wpspin_dark.gif', // 提交 icon
-        pic_no = wp_url + 'wp-admin/images/no.png',      // 錯誤 icon
-        pic_ys = wp_url + 'wp-admin/images/yes.png',     // 成功 icon
+        pic_sb = wp_url + 'wp-admin/images/wpspin_dark.gif', 
+        pic_no = wp_url + 'wp-admin/images/no.png',     
+        pic_ys = wp_url + 'wp-admin/images/yes.png',   
         txt1 = '<div id="loading"></div>',
         txt2 = '<div id="error">#</div>',
         txt3 = '"> <div id="edita">您的评论已经提交成功',
@@ -24,7 +19,7 @@ var edit_mode = '1', // 再編輯模式 ( '1'=開; '0'=不開 )
         edit, num = 1, comm_array=[]; comm_array.push('');
 
 jQuery(document).ready(function ($) {
-    $comments = $('#comments-title'); // 評論數的 ID
+    $comments = $('#comments-title');
     $cancel = $('#cancel-comment-reply-link');
     cancel_text = $cancel.text();
     $submit = $('#commentform #submit');
@@ -33,14 +28,10 @@ jQuery(document).ready(function ($) {
     $('#loading').hide();
     $('#error').hide();
     $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-
-    /** submit */
     $('#commentform').submit(function () {
         $('#loading').fadeIn();
         $submit.attr('disabled', true).fadeTo('slow', 0.5);
         if (edit) $('#comment').after('<input type="text" name="edit_id" id="edit_id" value="' + edit + '" style="display:none;" />');
-
-        /** Ajax */
         $.ajax({
             url: ajax_php_url,
             data: $(this).serialize(),
@@ -62,14 +53,10 @@ jQuery(document).ready(function ($) {
                     this.value = ''
                 });
                 var t = addComment, cancel = t.I('cancel-comment-reply-link'), temp = t.I('wp-temp-form-div'), respond = t.I(t.respondId), post = t.I('comment_post_ID').value, parent = t.I('comment_parent').value;
-
-// comments
                 if (!edit && $comments.length) {
                     n = parseInt($comments.text().match(/\d+/));
                     $comments.text($comments.text().replace(n, n + 1));
                 }
-
-// show comment
                 new_htm = '" id="new_comm_' + num + '"></';
                 new_htm = ( parent == '0' ) ? ('\n<ol style="clear:both;" class="commentwrap' + new_htm + 'ol>') : ('\n<ul class="children' + new_htm + 'ul>');
 
@@ -84,9 +71,6 @@ jQuery(document).ready(function ($) {
                 $('#new_comm_' + num).hide().append(data);
                 $('#new_comm_' + num + ' li').append(ok_htm);
                 $('#new_comm_' + num).fadeIn(600);
-
-/*                 $body.animate({scrollTop: $('#new_comm_' + num).offset().top - 200}, 900);
- */ 
 				countdown();
                 num++;
                 edit = '';
@@ -99,11 +83,9 @@ jQuery(document).ready(function ($) {
                     temp.parentNode.removeChild(temp)
                 }
             }
-        }); // end Ajax
+        }); 
         return false;
-    }); // end submit
-
-    /** comment-reply.dev.js */
+    }); 
     addComment = {
         moveForm: function (commId, parentId, respondId, postId, num) {
             var t = this, div, comm = t.I(commId), respond = t.I(respondId), cancel = t.I('cancel-comment-reply-link'), parent = t.I('comment_parent'), post = t.I('comment_post_ID');
@@ -133,8 +115,6 @@ jQuery(document).ready(function ($) {
                     temp.parentNode.removeChild(temp)
             ) : comm.parentNode.insertBefore(respond, comm.nextSibling);
 
-/*             $body.animate({scrollTop: $('#respond').offset().top - 180}, 400);
- */
             if (post && postId) post.value = postId;
             parent.value = parentId;
             cancel.style.display = '';
@@ -165,7 +145,7 @@ jQuery(document).ready(function ($) {
         I: function (e) {
             return document.getElementById(e);
         }
-    }; // end addComment
+    }; 
 
     function exit_prev_edit() {
         $new_comm.show();
@@ -189,4 +169,4 @@ jQuery(document).ready(function ($) {
         }
     }
 
-});// end jQ
+});
