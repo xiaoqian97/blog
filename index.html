@@ -1,282 +1,93 @@
-<!doctype html>
-<html lang="zh">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>小千博客主页</title>
-		<meta name="description" content="小千博客主页,资源分享，self introduce" />
-		<meta name="keywords" content="小千博客" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
-		<link rel="icon" href="images/qian_logo.jpg"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	</head>
-	<body onLoad="flash()" class="home blog custom-background round-avatars" >
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		  <div class="shooting_star"></div><div class="shooting_star"></div>
-		<div class="Yarn_Background" style="background-image: url( images/47fb3c_.jpg);"></div>
-		<form class="js-search search-form search-form--modal" method="get" action="html/search.html" role="search">
-			<div class="search-form__inner">
-				<div>
-					<div id="search-container" class="ajax_search">
-						<form method="get" id="searchform" action="">
-							<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="Type then select or enter" name="s" id="search-input" />
-								<ul id="search_filtered" class="search_filtered"></ul>
-							</div>
-							<input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" />
-						</form>
-					</div>
-				</div>
-			</div>
-		</form>
-		<div class="navi" data-aos="fade-down">
-			<div class="bt-nav">
-				<div class="line line1"></div>
-				<div class="line line2"></div>
-				<div class="line line3"></div>
-			</div>
-			<div class="navbar animated fadeInRight">
-				<div class="inner">
-					<nav id="site-navigation" class="main-navigation">
-						<div id="main-menu" class="main-menu-container">
-							<div class="menu-menu-container">
-								<ul id="primary-menu" class="menu">
-									<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
-										<a href="index.html">首页</a>
-									</li>
-									<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
-										<a href="html/update.html">更新</a>
-									</li>
-									<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
-										<a href="html/link.html">链接</a>
-									</li>
-									<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252">
-										<a href="html/archives.html">归档</a>
-										<ul class="sub-menu">
-											<li id="menu-item-165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-165">
-												<a href="">theme</a>
-											</li>
-											<li id="menu-item-163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-163">
-												<a href="">Happen</a>
-											</li>
-											<li id="menu-item-924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-924">
-												<a href="">WeWork</a>
-											</li>
-											<li id="menu-item-164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-164">
-												<a href="">WordPress</a>
-											</li>
-										</ul>
-									</li>
-									<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
-										<a href="html/gustbook.html">留言</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- #site-navigation -->
-				</div>
-			</div>
-		</div>
-		<div class="hebin" data-aos="fade-down">
-			<i class=" js-toggle-search iconfont">&#xe60e;</i>
-		</div>
-		<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
-			<div class="site-branding text-center">
-				<a href="html/introduce.html">
-					<figure>
-						<img class="custom-logo avatar" src="images/omikron.png" />
-					</figure>
-				</a>
-				<h3 class="blog-description" id="txt" style="font-size:28px;font-family:Arial"></h3>
-			</div>
-			<!-- .site-branding -->
-			<div class="decor-part">
-				<div id="particles-js"></div>
-			</div>
-			<div class="animation-header">
-				<div class="decor-wrapper">
-					<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
-						<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
-						<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
-						<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
-						<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
-						<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
-						<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
-						<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
-					</svg>
-				</div>
-			</div>
-		</header>
-		<div id="main" class="content">
-			<div class="container">
-				<article itemscope="itemscope">
-					<div class="posts-list js-posts">
-						<div class="post post-layout-list" data-aos="fade-up">
-							<div class="status_list_item icon_kyubo">
-								<div class="status_user" href="html/JavaScript.html" style="background-image: url(images/JavaScript.jpg);">
-									<div class="status_section">
-										<a href="html/JavaScript.html" class="status_btn">javascript正则表达式知识拓展总结</a>
-										<p class="section_p">javascript的正则表达式是前端中比较重要的部分，正则表达式主要用于字符串处理，表单验证等场合，实用高效。JavaScript中的正则表达式比起C#中的正则表达式要弱很多，但基本够用了。</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="post post-layout-list" data-aos="fade-up">
-							<div class="postnormal review ">
-								<div class="post-container review-item">
-									<div class="row review-item-wrapper">
-										<div class="col-sm-3">
-											<a rel="nofollow" href="html/JavaScript.html">
-												<div class="review-item-img" style="background-image: url(images/diego-ph-249471-2-800x1000.jpg);"></div>
-											</a>
-										</div>
-										<div class="col-sm-9 flex-xs-middle">
-											<div class="review-item-title">
-												<a href="html/source.html" rel="bookmark">博客，网站和视频资源</a>
-											</div>
-											<div class="review-item-creator"><b>发布日期：</b>2019-4-30</div>
-											<span class="review-item-info"><b>总浏览量：</b>2203 reads</span>
-										</div>
-									</div>
-									<div class="review-bg-wrapper">
-										<div class="bg-blur" style="background-image: url(images/diego-ph-249471-2-800x1000.jpg);"></div>
-									</div>
-								</div>
-								<div class="post-container">
-									<div class="entry-content">里面都是一些关于前端的有用的博客和网站，另外视频资源大都是非常有用的而且是很珍贵的，希望能帮助到大家！</div>
-									<div class="post-footer">
-										<a class="gaz-btn primary" href="html/source.html">READ MORE</a>
-										<span class="total-comments-on-post pull-right"><a href="">31 Comments</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="post post-layout-list" data-aos="fade-up">
-							<div class="status_list_item icon_kyubo">
-								<div class="status_user" style="background-image: url(images/b0ce3f3cde0c084b6d42321b2dcbc407.jpeg);">
-									<div class="status_section">
-										<a href="html/introduce.html" class="status_btn">Self introduction</a>
-										<p class="section_p">这里面是一个非常正经的自我介绍</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="post post-layout-list js-gallery" data-aos="fade-up">
-							<div class="post-album">
-								<div class="row content">
-									<div href="html/pic-center.html" class="bg" style="background-image: url(images/IMG_0150.jpg);"></div>
-									<div class="contentext flex-xs-middle">
-										<div class="album-title">
-											<a href="html/pic-center.html">css图片居中原来有这么多种方法</a>
-										</div>
-										<h5 class="review-item-creator"><b>发布日期：</b>2019-05-13</h5>
-										<div class="album-content">图片的居中显示css有很多方法，但在很多情况下有的方法无效，这是件很头疼的事情，比如
-一般设置图片属性text-align:centre水平居中，但这个方法经常无效，很多前端工程师都有研究过或者说是搜索过css图片居中方法吧。</div>
-									</div>
-									<div class="album-thumb-width flex-xs-middle">
-										<div class="row album-thumb no-gutter">
-											<div class="col-xs-4"><img class="thumb" src="images/IMG_0150-250x250.jpg" /></div>
-											<div class="col-xs-4"><img class="thumb" src="images/IMG_0149-250x250.jpg" /></div>
-											<div class="col-xs-4"><img class="thumb" src="images/IMG_0146-250x250.jpg" /></div>
-											<div class="col-xs-4"><img class="thumb" src="images/IMG_0147-250x250.jpg" /></div>
-											<div class="col-xs-4"><img class="thumb" src="images/IMG_0148-250x250.jpg" /></div>
-											<div class="col-xs-4">
-												<a href="href="html/pic-center.html"">5 pics</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="post post-layout-list" data-aos="fade-up">
-							<div class="postnormal review ">
-								<div class="post-container review-item">
-									<div class="row review-item-wrapper">
-										<div class="col-sm-3">
-											<a rel="nofollow" href="html/5.26.html">
-												<div class="review-item-img" style="background-image: url(images/web.jpg);"></div>
-											</a>
-										</div>
-										<div class="col-sm-9 flex-xs-middle">
-											<div class="review-item-title">
-												<a href="html/5.26.html" rel="bookmark">前端学习路线</a>
-											</div>
-											<div class="review-item-creator"><b>发布日期：</b>2019-05-20</div>
-											<span class="review-item-info"><b>总浏览量：</b>1600 reads</span>
-										</div>
-									</div>
-									<div class="review-bg-wrapper">
-										<div class="bg-blur" style="background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4292319361,1107421776&fm=26&gp=0.jpg);"></div>
-									</div>
-								</div>
-								<div class="post-container">
-									<div class="entry-content">web前端的定义：是面向用户（浏览者）的互联网技术统称。主要包括Web界面的结构、Web界面的外观视觉表现以及Web界面的交互实现。</div>
-									<div class="post-footer">
-										<a class="gaz-btn primary" href="html/5.26.html">READ MORE</a>
-										<span class="total-comments-on-post pull-right"><a href="">30 Comments</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- post-formats end Infinite Scroll star -->
-					<!-- post-formats -->
-					<div class="pagination js-pagination">
-						<div class="js-next pagination__load">
-							<a href="html/body2.html"><i class="iconfont">&#xe605;</i></a>
-						</div>
-					</div>
-					<!-- -pagination  -->
-			</div>
-		</div>
-
-		<footer id="footer" class="overlay animated from-top">
-			<div class="decor-wrapper">
-				<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
-					<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
-					<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
-					<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
-					<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
-					<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
-					<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
-					<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
-					<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
-				</svg>
-			</div>
-			<div class="socialize" data-aos="zoom-in">
-				<li>
-					<a title="weibo" class="socialicon" href=""><i class="iconfont" aria-hidden="true">&#xe601;</i></a>
-				</li>
-				<li class="wechat">
-					<a class="socialicon"><i class="iconfont">&#xe609;</i></a>
-					<div class="wechatimg"><img src="images/mmqrcode1558857939418.png"></div>
-				</li>
-				<li>
-					<a title="QQ" class="socialicon" target="_blank" href="tencent://message/?uin="+"1779530391"+"&Site=www.1779530391.com.cn&Menu=yes">
-					<i class="iconfont" aria-hidden="true">&#xe616;</i>
-					</a>
-				</li>
-			</div>
-			<div class="cr">
-				Copyright&copy;2019.05 Design by
-				<a href="">小千</a>
-			</div>
-			<script type='text/javascript' src='js/jquery.min.js'></script>
-			<script type="text/javascript" src="js/Special .js" ></script>
-			<script type='text/javascript' src='js/plugins.js'></script>
-			<script type='text/javascript' src='js/script.js'></script>
-			<script type='text/javascript' src='js/particles.js'></script>
-			<script type='text/javascript' src='js/aos.js'></script>
-
-	</body>
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>查看你的照片</title>
+	<link rel="icon" href="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1257285701,821563668&fm=26&gp=0.jpg">
+</head>
+<style type="text/css">
+	body{
+		margin: 0 auto;
+		background: white;
+	}
+	.div1{
+		margin: 0 auto;
+		background: #E6E6FA;
+		width:35%;
+		height: 600px;
+		position: relative;
+	}
+	.txt{
+		position: absolute;
+		bottom: 170px;
+		right: 11px;
+		font-size: 20px;
+		border: 0.5px solid	#DCDCDC;
+		width: 96%;
+		height: 49px;
+	}
+	.btn{
+		position: absolute;
+		bottom: 100px;
+		right: 11px;
+		width: 96%;
+		height: 50px;
+		background: #1E90FF;
+		font-size: 25px;
+		border: none;
+	}
+	.photo{
+		width: 144px;
+		height: 192px;
+		border: 3px solid 	white;
+		position: absolute;
+		top: 50px;
+		left: 190px;
+	}
+	a{
+		position: absolute;
+		bottom: 5px;
+		left: 120px;
+		color: gray;
+		font-size: 15px;
+	}
+	.img1{
+		width: 400px;
+		height: 300px;
+	    position: relative;
+	    bottom: 200px;
+	    left: -80px;
+		display:inline-block;
+	}
+	.img2{
+		width: 396px;
+		height: 162px;
+	    position: relative;
+	    left: 1000px;
+	    top: -250px;
+	}
+</style>
+<script type="text/javascript">
+	function dianji(){
+		var txt = document.getElementById("txt");
+		var pic = 'http://210.42.38.26:84/jwc_glxt/Stu_Info/StuImageHandler.ashx?PhotoId=' + txt.value;
+		var img = document.getElementById("img").setAttribute("src",pic);
+	}
+	function nofind(){
+	   var img=document.getElementById("img");
+	   img.src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1257285701,821563668&fm=26&gp=0.jpg";
+	   alert("三峡大学以及三峡大学科技学院暂无此用户！")
+	   img.onerror=null; 
+	}
+</script>
+<body>
+	<h1><center>照片墙</center></h1>
+    <div class="div1">
+    <div class="photo" id="photo"><img id="img" onerror="nofind()" width="144px" height="192px" /></div>
+	<input type="text" name="text"  class="txt" id="txt" placeholder="请输入你的学号:">
+	<input type="button" name="btn" class="btn" id="btn" onclick="dianji()" value="提交">
+	<a>小千 &copy; 仅供三峡大学以及三峡大学科技学院使用</a>
+    </div>
+<a><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561093614840&di=9e946bed5d54eb4a95479b5c3e930c37&imgtype=0&src=http%3A%2F%2Fs4.sinaimg.cn%2Fmw690%2F001l1RwZzy7m3kFbMPha3%26690" class="img1"></a>
+<a><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561094636342&di=a16395ed7e6c0c78f11c3339f455b88d&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170110%2Fb56b87be5f174eca81f9d06116aa1968.jpg" class="img2"></a>
+</body>
 </html>
