@@ -53,9 +53,13 @@
 </style>
 <script type="text/javascript">
 	function dianji(){
-		var txt = document.getElementById("txt");
+	if (txt.value == 2016112213) {
+			alert("这是本人照片，由于太帅，暂时不允许查看！\n此为女神陈钰琪,hahaha!");
+			var img = document.getElementById("img").setAttribute("src","https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561712870&di=0b953889afdc168bc5307cc9795713f3&imgtype=jpg&er=1&src=http%3A%2F%2Fwx1.sinaimg.cn%2Flarge%2F006VFOH9gy1g1qykjggs5j30k00v4x4n.jpg");
+		}else{
 		var pic = 'http://210.42.38.26:84/jwc_glxt/Stu_Info/StuImageHandler.ashx?PhotoId=' + txt.value;
 		var img = document.getElementById("img").setAttribute("src",pic);
+	}
 	}
 	function nofind(){
 	   var img=document.getElementById("img");
